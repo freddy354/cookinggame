@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Last Train Ramen — warung ramen di peron stasiun</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0d1126; min-height: 100%; }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100vh;
+    font-family: system-ui, sans-serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    display: block;
+    width: min(1280px, 100vw);
+    height: auto;
+    background: #1b2340;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+  }
+  #hint { color: #cbb98d; font-size: 13px; margin: 10px 0 0; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="540"></canvas>
+  <p id="hint">1-6 bahan &nbsp;•&nbsp; SPACE cincang &nbsp;•&nbsp; E tarik mie &nbsp;•&nbsp; ENTER sajikan &nbsp;•&nbsp; T buang &nbsp;•&nbsp; P jeda</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
